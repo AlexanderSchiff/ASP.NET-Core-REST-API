@@ -19,6 +19,6 @@ jobs:
       - name: Install dependencies
         run: cd PetStoreAPI; dotnet restore
       - name: Build
-        run: cd PetStoreAPI; dotnet build --configuration Release --no-restore
+        run: dotnet build --configuration Release --no-restore
       - name: Test
-        run: cd PetStoreAPI; dotnet test --no-restore --verbosity normal
+        run: dotnet test --no-restore --verbosity normal
